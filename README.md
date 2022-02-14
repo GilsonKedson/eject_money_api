@@ -3,10 +3,10 @@ Repositório criado com finalidade de ajudar no desenvolvimento da trilha REACT 
 
 ## Endpoints
 <ul>
-  <li>(<strong>GET</strong>) http//127.0.0.1:8000/transacoes/</li>
-  <li>(<strong>POST</strong>) http//127.0.0.1:8000/transacoes/</li>
-  <li>(<strong>GET</strong>) http//127.0.0.1:8000/transacoes/id/</li>
-  <li>(<strong>PUT</strong>) http//127.0.0.1:8000/transacoes/id/</li>
-  <li>(<strong>PATCH</strong>) http//127.0.0.1:8000/transacoes/id/</li>
-  <li>(<strong>DELETE</strong>) http//127.0.0.1:8000/transacoes/id/</li>
+  <li>(<strong>GET</strong>) https://eject-money.herokuapp.com/transacoes/</li>
+  <li>(<strong>POST</strong>) https://eject-money.herokuapp.com/transacoes/</li>
+  <li>(<strong>GET</strong>) https://eject-money.herokuapp.com/transacoes/{id}/</li>
+  <li>(<strong>PUT</strong>) https://eject-money.herokuapp.com/transacoes/{id}/</li>
+  <li>(<strong>PATCH</strong>) https://eject-money.herokuapp.com/transacoes/{id}/</li>
+  <li>(<strong>DELETE</strong>) https://eject-money.herokuapp.com/transacoes/{id}/</li>
 </ul>
