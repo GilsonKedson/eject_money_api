@@ -98,11 +98,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # CONFIGURAÇÃO DO CORS
-CORS_ALLOWED_ORIGINS  =  [ 
-    # ENDEREÇOS
-    "http://localhost:3000",
-    "http://localhost:5500",
-]
+CORS_ORIGIN_ALLOW_ALL = True
 
 
 # Internationalization
