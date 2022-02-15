@@ -2,9 +2,9 @@ from rest_framework import viewsets
 from rest_framework.response import Response
 from .models import Transaction
 from .serializers import TransactionSerializer
-from utils.entradas import get_money_transaction_input
-from utils.saidas import get_money_transaction_output
-from utils.valores_total import total_money
+from utils.entradas import get_amount_transaction_input
+from utils.saidas import get_amount_transaction_output
+from utils.valores_total import total_amount
 
 class TransactionViewSet(viewsets.ModelViewSet):
     queryset = Transaction.objects.all()
@@ -14,15 +14,15 @@ class TransactionViewSet(viewsets.ModelViewSet):
     def list(self, request):
         transactions = Transaction.objects.all()
         serializer = TransactionSerializer(transactions, many=True)
-        inputs = get_money_transaction_input(transactions.filter(type='e'))
-        outputs = get_money_transaction_output(transactions.filter(type='s'))
-        total_value_money = total_money(inputs, outputs)
+        inputs = get_amount_transaction_input(transactions.filter(type='e'))
+        outputs = get_amount_transaction_output(transactions.filter(type='s'))
+        total_value_amount = total_amount(inputs, outputs)
         
         context = {
             'transactions': serializer.data,
-            'inputs_money': inputs,
-            'outputs_money': outputs,
-            'total_money': total_value_money,
+            'inputs_amount': inputs,
+            'outputs_amount': outputs,
+            'total_amount': total_value_amount,
         }
         
         return Response(context)

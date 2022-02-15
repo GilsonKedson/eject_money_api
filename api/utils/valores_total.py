@@ -1,2 +1,2 @@
-def total_money(inputs, outputs):
+def total_amount(inputs, outputs):
     return inputs - outputs
