@@ -63,12 +63,14 @@ Em desenvolvimento, porém utilizável. 🚧
 (POST) https://eject-money.herokuapp.com/transacoes/
 
 Ex:
+type="e" é entrada
+type="s" é saída
 
 {
     "title": "Pagamento de terceirizados",
     "amount": 300,
     "tag": "Despesas",
-    "type": "s"
+    "type": "s" ou "e"
 }
 ```
 
@@ -76,6 +78,8 @@ Ex:
 (PUT OU PATCH) https://eject-money.herokuapp.com/transacoes/{id}/
 
 Ex:
+type="e" é entrada
+type="s" é saída
 
 {
     "title": "Pagamento de terceirizados",
