@@ -2,8 +2,8 @@ from datetime import datetime
 from django.db import models
 
 class Transaction(models.Model):
-    INPUT_TRANSACTION = 'e'
-    OUTPUT_TRANSACTION = 's'
+    INPUT_TRANSACTION = 'income'
+    OUTPUT_TRANSACTION = 'expense'
 
     TYPE_TRANSACTION = (
         (INPUT_TRANSACTION, 'Entrada'),
@@ -14,7 +14,7 @@ class Transaction(models.Model):
     amount = models.DecimalField('Preço:', max_digits=8, decimal_places=2, blank=False, null=False, default=0)
     tag = models.CharField('Tag da transação', max_length=30, blank=False, null=False)
     date = models.DateField('Data da transação', blank=False, null=False, auto_now_add=True)
-    type = models.CharField('Tipo da transação', max_length=1, choices=TYPE_TRANSACTION, default=INPUT_TRANSACTION)
+    type = models.CharField('Tipo da transação', max_length=7, choices=TYPE_TRANSACTION, default=INPUT_TRANSACTION)
     
     
     class Meta:

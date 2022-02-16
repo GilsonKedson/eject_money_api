@@ -13,9 +13,11 @@ class TransactionViewSet(viewsets.ModelViewSet):
     
     def list(self, request):
         transactions = Transaction.objects.all()
+        income = Transaction.INPUT_TRANSACTION
+        expense = Transaction.OUTPUT_TRANSACTION
         serializer = TransactionSerializer(transactions, many=True)
-        inputs = get_amount_transaction_input(transactions.filter(type='e'))
-        outputs = get_amount_transaction_output(transactions.filter(type='s'))
+        inputs = get_amount_transaction_input(transactions.filter(type=income))
+        outputs = get_amount_transaction_output(transactions.filter(type=expense))
         total_value_amount = total_amount(inputs, outputs)
         
         context = {
