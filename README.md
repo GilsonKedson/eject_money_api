@@ -3,7 +3,7 @@
 Repositório criado com finalidade de ajudar no desenvolvimento da trilha React JS da EJECT, fornecendo uma API simples utilizando Django Rest Framework.
 
 ## Status
-Em desenvolvimento, porém utilizável. 🚧
+Finalizado! ✔️
 
 ## Endpoints HEROKU
 <ul>
