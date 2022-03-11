@@ -5,6 +5,20 @@ Repositório criado com finalidade de ajudar no desenvolvimento da trilha React 
 ## Status
 Finalizado! ✔️
 
+## Tecnologias utilizadas
+<ul>
+  <li>Python</li>
+  <li>Django</li>
+  <li>Django Rest Framework</li>
+  <li>SQLite</li>
+  <li>Heroku</li>
+</ul>
+
+## Autor
+<h4>Gilson Kedson dos Santos Silva</h4>
+<p>Linkedin: https://www.linkedin.com/in/gilson-kedson/</p>
+<p>Email: gilson.kedson.dev@gmail.com</p>
+
 ## Endpoints HEROKU
 <ul>
   <li>(<strong>GET</strong>) https://eject-money.herokuapp.com/transacoes/</li>
